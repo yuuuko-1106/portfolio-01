@@ -1,0 +1,26 @@
+@use "../variable" as *;
+
+@mixin mq($type) {
+
+  // SP表示用mixin
+  @if($type =='sp') {
+    @media screen and (max-width: #{$breakpoint-sp}) {
+      @content;
+    }
+  }
+
+  // タブレット表示用mixin
+  @else if($type =='tb') {
+    @media screen and (max-width: #{$breakpoint-tb}) {
+      @content;
+    }
+  }
+
+  // PC表示用mixin
+  @else if($type =='pc') {
+    @media print, screen and (min-width: #{$breakpoint-pc}) {
+      @content;
+    }
+  }
+
+}

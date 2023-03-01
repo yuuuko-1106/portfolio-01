@@ -1,0 +1,96 @@
+@use "../../global" as *;
+
+.p-flow {
+
+    &__items {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+
+        @include mq('sp') {
+            width: 100%;
+        }
+
+        &--item {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 36px;
+            margin-bottom: 42px;
+
+            @include mq('sp') {
+            //    gap: 12%;
+            }
+    
+
+            &:last-of-type & {
+            
+                &__num {
+
+                    &::after {
+                        content:none;
+                    }
+                }
+            }
+
+            &__num {
+                background: #000000;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                color: #ffffff;
+                font-size: 28px;
+                text-align: center;
+                line-height: 190%;
+                font-weight: 700;
+
+                @include mq('sp') {
+                    line-height: 204%;
+                }
+     
+        
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: calc(100% + 2rem);
+                    background-color: #000000;
+                    top: 68px;
+                    left: 30px;
+
+                    @include mq('tb') {
+                        top: 73%;
+                    }
+                    @include mq('sp') {
+                        top: 65%;
+                    }
+                }
+        
+            }
+
+            &__content {
+
+                @include mq('tb') {
+                    width: 80%;
+                    max-width: 550px;
+                }
+                @include mq('sp') {
+                    width: 80%;
+                }
+        
+                &--title {
+                    color: #E68275;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+                }
+        
+            }
+    
+        }
+       
+    }
+
+
+}

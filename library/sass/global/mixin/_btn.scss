@@ -1,0 +1,18 @@
+@use "../variable" as *;
+@use "sass:math";
+
+@mixin btn($width) {
+  width: $width;
+  height: math.div($width, 4px) + px; //除算
+  display: inline-block;
+  align-items: flex-start;
+  border: none;
+  border-radius: 80px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  padding: math.div($width, 14px)+px 6px 0px;
+}

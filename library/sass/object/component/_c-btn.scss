@@ -1,0 +1,29 @@
+@use "../../global" as *;
+
+.c-btn {
+
+	&__contact {
+		@include btn(200px);
+		background: $btn-color-background;
+
+		&:hover {
+			background: $btn-color-background-hover;
+			color: $btn-color-text-hover;
+			border: 2px solid $btn-color-border;
+		}
+	}
+
+
+	&__black {
+		@include btn(200px);
+		background: #3f3f3f;
+
+		&:hover {
+			background: $btn-color-background-hover;
+			color: $btn-color-text-hover;
+			border: 2px solid $btn-color-border;
+		}
+	}
+
+}
+

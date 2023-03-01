@@ -1,0 +1,36 @@
+@use "../global" as *;
+/*---------------------------------------------------
+  layout main visual
+-----------------------------------------------------*/
+.l-main {
+    position: relative;
+    margin-top: $layout-height-header-pc;
+
+    @include mq ('tb') {
+        margin-top: $layout-height-header-tb;
+    }
+
+    @include mq ('sp') {
+        margin-top: $layout-height-header-sp;
+    }    
+
+
+    .l-main-visual {
+        background-image: url(../#{$img-path}img_mv.jpg);
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 722px;
+
+        @include mq ('pc') {
+            min-width: $layout-width-inner-pc + $layout-padding-inner-pc*2;
+        }
+
+        @include mq ('sp') {
+            background-image: url(../#{$img-path}img_mv_sp.jpg);
+            height: 720px;
+        }    
+        
+    }    
+    
+}

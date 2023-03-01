@@ -1,0 +1,27 @@
+// PCレイアウト時の最小横幅
+$layout-width-inner-pc: 960px;
+
+// PCレイアウト時のコンテンツパディング
+$layout-padding-inner-pc: 24px;
+
+// レイアウト時のヘッダーの高さ
+$layout-height-header-pc: 88px;
+$layout-height-header-tb: 80px;
+$layout-height-header-sp: 80px;
+
+// タブレットレイアウト時の最小横幅
+$layout-width-inner-tb: 736px;
+
+// タブレットレイアウト時のコンテンツパディング
+$layout-padding-inner-tb: 16px;
+
+// SPレイアウト時の最小横幅
+$layout-width-inner-sp: 343px;
+
+// SPレイアウト時のコンテンツパディング
+$layout-padding-inner-sp: 16px;
+
+// ブレイクポイント
+$breakpoint-sp: 767px; //767px以下（スマホ）用の表示
+$breakpoint-tb: 1024px; //768px〜1024px（タブレット）用の表示
+$breakpoint-pc: 1025px; //1025px以上（PC）用の表示

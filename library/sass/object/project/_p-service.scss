@@ -1,0 +1,38 @@
+@use "../../global" as *;
+
+.p-service {
+
+    &__items {
+
+        @include mq('sp') {
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--item {
+            display: flex;
+            flex-direction: row;
+            // margin-bottom: 40px;
+            align-items: center;
+
+            @include mq('sp') {
+                flex-direction: column-reverse;
+            }
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;                
+            
+                @include mq('sp') {
+                    flex-direction: column-reverse;
+                }
+    
+            }
+    
+        }
+
+    
+    }
+
+
+}

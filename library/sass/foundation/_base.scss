@@ -1,0 +1,79 @@
+@use "../global/" as *;
+/*---------------------------------------------------
+  base
+-----------------------------------------------------*/
+body {
+    width: 100%;
+    font-family: $base_font_family;
+	font-size: $base_font_size;
+    font-style: normal;
+    font-weight: $base_font_weight;
+    line-height: 1.6;
+    color: $base_color_text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 0 0 0;
+}
+img {
+	border: none;
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+/* PC
+---------------------------------------*/
+@include mq('pc') {
+	body {
+		width: 100%;
+	}
+
+	.for-sp {
+		display: none;
+	}
+	.for-pc {
+		display: inherit;
+	}
+}
+
+/* タブレット
+---------------------------------------*/
+@include mq('tb') {
+	body {
+		min-width: $layout-width-inner-tb;
+	}
+
+	html,
+	body {
+		height: 100%;
+		min-height: 100%;
+	}
+
+	.for-sp {
+		display: none;
+	}
+	.for-pc {
+		display: inherit;
+	}
+}
+
+
+/* SP
+---------------------------------------*/
+@include mq('sp') {
+	body {
+		min-width: $layout-width-inner-sp;
+	}
+
+	html,
+	body {
+		height: 100%;
+		min-height: 100%;
+	}
+
+	.for-sp {
+		display: inherit;
+	}
+	.for-pc {
+		display: none;
+	}
+}

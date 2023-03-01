@@ -1,0 +1,21 @@
+@use "../../global" as *;
+
+.c-card__base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--image {
+        margin-bottom: 16px;
+        background-color: #FFFAF0;
+        border-radius: 50%;
+    }
+
+    &--title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+}

@@ -1,0 +1,31 @@
+@use "../../global" as *;
+
+.p-probrem {
+
+	&__lead {
+		margin-bottom: 40px;
+        text-align: center;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq ('sp') {
+			flex-flow: column;
+			align-items: center;
+			gap: 3rem;
+		}
+
+		&--item {
+            width: calc((100% - 60px) / 3) ;
+
+			@include mq('sp') {
+				width: 100%;
+			}
+		}
+
+	}
+
+
+}

@@ -1,0 +1,53 @@
+@use "../../global" as *;
+
+.c-site-catch {
+	font-size: 56px;
+	font-weight: bold;
+	margin-bottom: 48px;
+	
+	@include mq ('sp') {
+		font-size: 48px;
+	}
+
+}
+
+.c-sec-title {
+	position: relative;
+	font-size: 2.5rem;
+    font-weight: 700;
+	text-align: center;
+    color: $sub_color_text;
+	margin-bottom: 40px;
+
+
+    span {
+		font-family: $en_font_family;
+        font-size: 16px;
+        color: #b6b6b6;
+        display: block;
+    }
+
+	@include mq ('sp') {
+		font-size: 2rem;
+
+		&::before {
+			width: 120px;
+			height: 63px;
+			top: -16px + -63px;
+		}
+	}
+
+	&--sm {
+		font-size: 2rem;
+
+		@include mq ('sp') {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.c-cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}

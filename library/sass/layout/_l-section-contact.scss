@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+.l-section-contact {
+    @include inner-bg;
+    background-color: #FFF0F5;
+
+    &__inner {
+        max-width: $layout-width-inner-pc + $layout-padding-inner-pc * 2;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0  $layout-padding-inner-pc;
+
+        @include mq('sp') {
+            padding: 0;
+        }
+    }
+
+}

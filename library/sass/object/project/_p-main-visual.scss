@@ -1,0 +1,16 @@
+@use "../../global" as *;
+
+.p-main-visual-info {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 180px 0 0 0;
+
+    &__main-block {
+        padding-left: 24px;
+
+        @include mq('sp') {
+            padding-left: 16px;
+        }
+    }
+
+}

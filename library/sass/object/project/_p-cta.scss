@@ -1,0 +1,21 @@
+@use "../../global" as *;
+
+.p-cta {
+
+    &__item {
+
+        &--title {
+            text-align: center;
+            color: #ffffff;
+        }
+        &--lead {
+            text-align: center;
+        }
+        &--btn {
+            text-align: center;
+        }
+    
+    }
+
+
+}

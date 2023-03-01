@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo | あなたらしく、もっと自由に。</title>
+    <meta name="description" content="このサイトは勉強のためにscssを使ってコーディングしています。架空の女性向けサービス企業サイトです。">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- index回避 -->
+    <meta name="robots" content="noindex" />
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="library/js/lib.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet"  type="text/css" href="library/css/style.css">
+	
+</head>
+<body>
+    <header id="fixed-header" class="l-header">
+        <nav class="l-gnav">
+            <div class="p-gnav-main">
+                <div class="p-gnav-main__item">
+                    <div class="p-gnav-main__item__left">
+                        <h1 class="p-gnav-main__item__left--logo"><a href="/"><img src="library/images/site_logo.png" alt="logo"></a></h1>
+                    </div>
+                    <div class="p-gnav-main__item__right">
+                        <ul class="p-gnav-main__item__right--menu-list">
+                            <li><a href="#sec-service">Service</a></li>
+                            <li><a href="#sec-flow">Flow</a></li>
+                            <li><a href="#sec-faq">FAQ</a></li>
+                            <li><a href="#sec-contact">Contact</a></li>
+                        </ul>
+                        <div class="p-gnav-main__item__right--contact c-btn__contact"><a href="#sec-contact">お問い合わせ</a></div>
+                        <div id="hamburger-menu"class="p-gnav-main__item__right--hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </nav>
+        <!-- スマホナビゲーションメニュー -->
+        <nav id="hamburger-nav" class="l-ganv-hamburger">    
+            <div class="l-ganv-hamburger__inner">
+                <ul class="p-ganv-hamburger-list">
+                    <li class="p-ganv-hamburger-list__item"><a href="#sec-service">Service</a></li>
+                    <li class="p-ganv-hamburger-list__item"><a href="#sec-flow">Flow</a></li>
+                    <li class="p-ganv-hamburger-list__item"><a href="#sec-faq">FAQ</a></li>
+                    <li class="p-ganv-hamburger-list__item"><a href="#sec-contact">Contact</a>/li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- バナーポップアップ -->
+    <div class="l-popup for-pc">
+        <div class="l-popup__wrap">
+            <span class="p-popup__close">×</span>
+            <a href="/event"><img src="library/images/img_popup.jpg" width="300" height="300" alt="オンライン開催女性のための働き方セミナー">
+            </a>
+        </div>
+    </div>
+    <div id="main-contents" class="l-main">
+        <div id="main-visual" class="l-main-visual">
+            <div class="p-main-visual-info">
+                <div class="p-main-visual-info__main-block">
+                    <!-- <p class="badge">○○なあなたへ</p> -->
+                    <h2 class="c-site-catch">
+                        あなたらしく、<br>もっと自由に。
+                    </h1>
+                    <!-- <p class="lead">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキスト</p> -->
+                    <div class="c-btn__contact"><a href="#sec-contact">お問い合わせはこちら</a></div>
+                </div>
+            </div>
+            <div class="scroll"></div>
+        </div>
+
+        <div id="sec-probrem" class="l-section">
+            <h2 class="c-sec-title">こんなお悩みありませんか？<span>Do you have any problems?</span></h2>
+            <p class="p-probrem__lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>
+            <ul class="p-probrem__items">
+                <li class="p-probrem__items--item c-card__base">
+                    <img src="library/images/img_probrem_01.png" alt="" width="250" height="250" class="c-card__base--image">
+                    <h3 class="c-card__base--title">お困りごと</h3>
+                    <p class="c-card__base--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>                    
+                </li>
+                <li class="p-probrem__items--item  c-card__base">
+                    <img src="library/images/img_probrem_01.png" alt="" width="250" height="250" class="c-card__base--image">
+                    <h3 class="c-card__base--title">お困りごと</h3>
+                    <p class="c-card__base--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>                    
+                </li>
+                <li class="p-probrem__items--item c-card__base">
+                    <img src="library/images/img_probrem_01.png" alt="" width="250" height="250" class="c-card__base--image">
+                    <h3 class="c-card__base--title">お困りごと</h3>
+                    <p class="c-card__base--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>                    
+                </li>
+            </ul>
+        </div>
+        <div class="l-section-cta">
+            <div class="l-section-cta__inner">
+                <h2 class="c-cta-title p-cta__item--title">お気軽に<br class="for-sp">お問い合わせください</h2>
+                <div class="p-cta__item--btn">
+                    <div class="c-btn__black"><a href="#sec-contact">お問い合わせはこちら</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="sec-service" class="l-section-wide">
+            <h2 class="c-sec-title">私達にできること<span>Service</span></h2>
+            <ul class="p-service__items">
+                <li class="p-service__items--item c-list__service">
+                    <div class="c-list__service__content">
+                        <h3 class="c-list__service__content--title">タイトルタイトルタイトル</h3>
+                        <p class="c-list__service__content--lead">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>    
+                    </div>
+                    <div class="c-list__service__image">
+                        <img src="library/images/img_service01.png" alt="" width="616" height="380">
+                    </div>
+                </li>
+                <li class="p-service__items--item c-list__service">
+                    <div class="c-list__service__content">
+                        <h3 class="c-list__service__content--title">タイトルタイトルタイトル</h3>
+                        <p class="c-list__service__content--lead">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>    
+                    </div>
+                    <div class="c-list__service__image">
+                        <img src="library/images/img_service01.png" alt="" width="616" height="380">
+                    </div>
+                </li>
+                <li class="p-service__items--item c-list__service">
+                    <div class="c-list__service__content">
+                        <h3 class="c-list__service__content--title">タイトルタイトルタイトル</h3>
+                        <p class="c-list__service__content--lead">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>    
+                    </div>
+                    <div class="c-list__service__image">
+                        <img src="library/images/img_service01.png" alt="" width="616" height="380">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sec-flow" class="l-section-flow">
+            <div class="l-section-flow__inner">
+                <h2 class="c-sec-title">サービス開始までの流れ<span>Flow</span></h2>
+                <div class="p-flow__items">
+                    <div class="p-flow__items--item">
+                        <p class="p-flow__items--item__num">01</p>
+                        <div class="p-flow__items--item__content">
+                            <h3 class="p-flow__items--item__content--title">お問い合わせ</h3>
+                            <p class="p-flow__items--item__content--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>
+                        </div>
+                    </div>
+                    <div class="p-flow__items--item">
+                        <p class="p-flow__items--item__num">02</p>
+                        <div class="p-flow__items--item__content">
+                            <h3 class="p-flow__items--item__content--title">ヒアリング</h3>
+                            <p class="p-flow__items--item__content--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります<br>説明文が入ります説明文が入ります説明文が入ります</p>
+                        </div>
+                    </div>
+                    <div class="p-flow__items--item">
+                        <p class="p-flow__items--item__num">03</p>
+                        <div class="p-flow__items--item__content">
+                            <h3 class="p-flow__items--item__content--title">ご提案</h3>
+                            <p class="p-flow__items--item__content--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>
+                        </div>
+                    </div>
+                    <div class="p-flow__items--item">
+                        <p class="p-flow__items--item__num">04</p>
+                        <div class="p-flow__items--item__content">
+                            <h3 class="p-flow__items--item__content--title">ご契約</h3>
+                            <p class="p-flow__items--item__content--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>
+                        </div>
+                    </div>
+                    <div class="p-flow__items--item">
+                        <p class="p-flow__items--item__num">05</p>
+                        <div class="p-flow__items--item__content">
+                            <h3 class="p-flow__items--item__content--title">サービス利用</h3>
+                            <p class="p-flow__items--item__content--lead">説明文が入ります説明文が入ります説明文が入ります説明文が入ります</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sec-faq" class="l-section">
+            <h2 class="c-sec-title">よくある質問<span>FAQ</span></h2>
+            <div class="p-faq">
+                <dl class="p-faq__area">
+                    <dt class="p-faq__area--question">質問が入ります質問が入ります質問が入ります質問が入ります</dt>
+                    <dd class="p-faq__area--answer">回答が入ります回答が入ります回答が入ります回答が入ります</dd>
+                </dl>    
+                <dl class="p-faq__area">
+                    <dt class="p-faq__area--question">質問が入ります質問が入ります質問が入ります質問が入ります</dt>
+                    <dd class="p-faq__area--answer">回答が入ります回答が入ります回答が入ります回答が入ります</dd>
+                </dl>    
+                <dl class="p-faq__area">
+                    <dt class="p-faq__area--question">質問が入ります質問が入ります質問が入ります質問が入ります</dt>
+                    <dd class="p-faq__area--answer">回答が入ります回答が入ります<br>回答が入ります回答が入ります</dd>
+                </dl>    
+                <dl class="p-faq__area">
+                    <dt class="p-faq__area--question">質問が入ります質問が入ります質問が入ります質問が入ります</dt>
+                    <dd class="p-faq__area--answer">回答が入ります回答が入ります回答が入ります<br>回答が入ります回答が入ります回答が入ります回答が入ります回答が入ります回答が入ります回答が入ります</dd>
+                </dl>    
+            </div>
+        </div>
+        <div id="sec-contact" class="l-section-contact">
+            <div class="l-section-flow__inner">
+                <h2 class="c-sec-title">お問い合わせ<span>Contact</span></h2>
+                <form action="" method="post" class="p-contact__form">
+                    <dl class="c-input__item">
+                        <dt class="c-input__item--label">
+                        <label for="name">お名前</label>
+                        </dt>
+                        <dd class="c-input__item--input">
+                        <input type="text" name="yourname" id="name" placeholder="例）山田　花子">
+                        </dd>
+                    </dl>
+                    <dl class="c-input__item">
+                        <dt class="c-input__item--label">
+                        <label for="email">メールアドレス</label>
+                        </dt>
+                        <dd class="c-input__item--input">
+                        <input type="email" name="youremail" id="email" placeholder="例）abc@example.com">
+                        </dd>
+                    </dl>
+                    <dl class="c-input__item">
+                        <dt class="c-input__item--label">
+                        <label for="contact_type">お問い合わせ内容</label>
+                        </dt>
+                        <dd class="c-input__item--input">
+                        <select name="contact_type" id="contact_type">
+                            <option value selected="選択してください">選択してください</option>
+                            <option value="サービスについて">サービスについて</option>
+                            <option value="資料請求について">資料請求について</option>
+                            <option value="その他">その他</option>
+                        </select>
+                        </dd>
+                    </dl>
+                    <dl class="c-input__item">
+                        <dt class="c-input__item--label">
+                        <label for="contents">本文</label>
+                        </dt>
+                        <dd class="c-input__item--input">
+                        <textarea name="contents" id="contents" cols="30" rows="10"></textarea>
+                        </dd>
+                    </dl>
+                    <div class="c-input__text">
+                        <p>
+                        <a href="#" class="c-input__text--link">
+                            プライバシーポリシー
+                        </a>
+                        をお読みになり、<br class="for-sp">同意される方はチェックしてください
+                    </div>
+                    </dl>
+                    <div class="c-input__agree">
+                        <label for="agree">
+                            <input type="checkbox" name="agree" id="agree" value="同意する">
+                            <span class="c-input__agree--inline">同意する</span>
+                        </label>
+                    </div>
+                    <div class="c-input__submit">
+                        <input type="submit" value="送信する">
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div> 
+    <footer id="footer" class="l-footer">
+        <div class="l-footer__inner">
+            <div class="p-footer__content-area">
+                <div class="p-footer__content-area__right">
+                    <div class="p-footer__logo"><img src="library/images/site_logo.png" alt="logo" width="210" height="56"></div>
+                </div>
+                <div class="p-footer__content-area__left">
+                    <h4 class="p-company">会社名</h4>
+                    <p>〒999-9999</p>
+                    <p>神奈川県横浜市○○区✕✕町9999-999</p>
+                    <p>03−9999-9999(代表)</p>        
+                </div>
+            </div>
+            <div class="p-footer__copyright-area">
+                <p>©2023, All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="p-footer__pagetop" >
+            <a href="#"></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* ============================================ */
+/* font
+/* ============================================ */
+/* ボタンのテキストカラー */
+/* ボタンのテキストカラー */
+/* ボタンの背景色 */
+.c-sec-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #E68275;
+}
+.c-sec-title span {
+  font-size: 14px;
+  color: #b6b6b6;
+  display: block;
+  line-height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .c-sec-title {
+    font-size: 2rem;
+  }
+  .c-sec-title::before {
+    width: 120px;
+    height: 63px;
+    top: -79px;
+  }
+}
+.c-sec-title--sm {
+  font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .c-sec-title--sm {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=c-title.css.map */

@@ -1,0 +1,65 @@
+@use "../../global" as *;
+
+.p-faq {
+
+    &__area {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-bottom: 4.5%;
+        padding: 24px 24px 24px 62px;
+        border-radius: 20px;
+        background-color: #f6faff;
+
+        @include mq('sp') {
+            padding: 24px 56px 24px 42px;
+        }
+
+        &--question {
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+
+            &::before {
+                content: "Q";
+                font-size: 1.8rem;
+                font-weight: 700;
+                left: -31px;
+                position: absolute;
+                text-align: center;
+                top: -10px;
+                width: 1em;
+                color: $sub_color_text;
+            }
+            
+            &::after  {
+                content: "";
+                background-image: url(../#{$img-path}icon_open.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 32px;
+                padding-top: 32px;
+                right: 24px;
+                top: 0;
+                transition: all 0.25s ease;
+
+                @include mq('sp'){
+                    right: -40px;
+                }
+            }
+
+        }
+    
+            .selected::after {
+                background-image: url(../#{$img-path}icon_close.png);
+            }
+
+            &--answer {
+                display: none;
+                padding-top: 24px;
+            }    
+    
+        }
+
+}

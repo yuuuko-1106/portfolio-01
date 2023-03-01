@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.l-section-cta {
+    @include inner-bg;
+    background-color: #E68275;
+
+    &__inner {
+        max-width: $layout-width-inner-pc + $layout-padding-inner-pc * 2;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0  $layout-padding-inner-pc;
+    }
+}
